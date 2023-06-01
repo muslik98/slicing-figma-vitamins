@@ -1,0 +1,566 @@
+/* VARIABLES CSS */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600&display=swap');
+
+:root {
+    --primary-color: #05422C;
+    --secondary-color: #17AF26;
+    --third-color: #F2BC1B;
+    --neutral-color: #F4F4F4;
+    --secondary-neutral-color: #01100B;
+    --first-gradient: linear-gradient(45deg, #05422C);
+    --title-color: #1A1E26;
+    --text-color: #46494F;
+    --font-family: 'Lexend', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+.mg-lk {
+    margin: 0 3rem;
+}
+
+#discount {
+    display: flex;
+    height: 37px;
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+#discount p:first-child {
+    font-size: 1rem;
+    margin-right: 1rem;
+    opacity: .7;
+}
+
+.container {
+    box-shadow: rgba(0, 0, 0, 0.01) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.header-content {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    width: 48%;
+    flex-direction: row;
+}
+
+.search-bar input {
+    width: 90%;
+    height: 3rem;
+    padding: 1rem 1.5rem;
+    margin-right: 8px;
+    border: 1px solid #F4F4F4;
+    border-radius: 2rem;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 400;
+    outline: none;
+}
+
+.search-bar input::placeholder {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 400;
+    color: #C8C9CB;
+}
+
+.search-bar button {
+    min-width: 48px;
+    height: 48px;
+    border: none;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+}
+
+.account {
+    display: flex;
+}
+
+.account-text {
+    display: flex;
+    align-items: center;
+}
+
+.account-text p {
+    font-family: var(--font-family);
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0 1rem;
+}
+
+.account-text p::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 0.7rem;
+    background-color: #C8C9CB;
+    margin-left: 1rem;
+}
+
+
+.main-nav {
+    display: flex;
+    margin-top: 1px;
+    background-color: #ffffff;
+    justify-content: center;
+}
+
+.nav-items {
+    width: 75%;
+    margin: 0 3rem;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.nav-items li {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.carousel {
+    display: flex;
+    height: 720px;
+    padding: 0 0 0 4rem;
+    align-items: center;
+    background-image: conic-gradient(from 100deg, #05422C, #648a7c, #648a7c, #346654, #346654, #05422C);
+}
+
+.carousel-text {
+    width: 52%;
+}
+
+.carousel-text > p:first-child {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 0.25rem;
+    line-height: 110%;
+    color: var(--third-color);
+}
+
+.carousel-text p:nth-child(3) {
+    margin-top: 24px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--neutral-color);
+}
+
+.carousel-text h1 {
+    width: 100%;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 4rem;
+    font-style: normal;
+    line-height: 110%;
+    letter-spacing: -4px;
+    color: #ffffff;
+}
+
+.carousel-text button {
+    width: 185px;
+    height: 64px;
+    padding: 8px 56px;
+    margin-top: 40px;
+    background: #17AF26;
+    border: none;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 150%;
+    color: #ffffff;
+}
+
+.carousel-discount {
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: flex;
+    margin-top: 102px;
+    gap: 1rem;
+    color: #ffffff;
+}
+
+.carousel-discount > p:first-child::after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 50%;
+    background-color: #ccc;
+    margin-left: 1rem;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: end;
+    font-size: 0;
+    width: 48%;
+    height: 100%;
+}
+
+.carousel-images img{
+    max-width: 100%;
+}
+
+.info-section {
+    display: flex;
+    padding: 5rem 4rem;
+    justify-content: center;
+    gap: 32px;
+    background-color: #F2F6F4;
+}
+
+.t-head h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+}
+
+.t-font p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+.section-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.img-container {
+    width: 100px;
+    margin-right: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-bg {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 100px;
+}
+
+.circle-bg img {
+    width: 56px;
+    height: 56px;
+}
+
+.t-container {
+    width: calc(100% - 124px);
+}
+
+.t-font p {
+    margin-top: 16px;
+    color: #717378;
+}
+
+.dispensary-section {
+    margin-top: 120px;
+    text-align: center;
+}
+
+.dispensary-section > h1:first-child {
+    max-width: 984px;
+    margin: 0 auto;
+    padding: 0 0.1rem;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 110%;
+    letter-spacing: -4px;
+    color: #1A1E26;
+}
+
+.button-group {
+    display: flex;
+    margin-top: 64px;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 7.5rem;
+}
+
+.button-group button {
+    width: 32%;
+    min-width: 100px;
+    padding: 12px 20px;
+    border-radius: 100px;
+    font-family: 'Lexend';
+}
+
+.button-group button:nth-child(1) {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #05422C;
+    border: 1px solid #05422C
+}
+
+.button-group button:not(:nth-child(1)) {
+    background-color: #ffffff;
+    border: 1px solid #F4F4F4;
+    font-size: 1rem;
+}
+
+.product-list {
+    display: flex;
+    width: 100%;
+    margin-top: 64px;
+    gap: 32px;
+    padding: 0 0 0 7.5rem;   
+}
+
+.product-item {
+    width: 29%;
+    height: 568px;
+    background-color: var(--primary-color);
+    border-radius: 16px;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.product-item > p:nth-child(2) {
+    margin-top: 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 150%;
+}
+
+.product-item > p:nth-child(3) {
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.product-item > button {
+    margin-top: 20px;
+    background: none;
+    color: var(--secondary-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    text-decoration-line: underline;
+    border: none;
+}
+
+.product-item img {
+    margin-top: 84px;
+}
+
+
+.product-item > div:last-child {
+    width: 261px;
+    height: 371px;
+    background: linear-gradient(180deg, rgba(52, 102, 84, 0) 0%, rgba(52, 102, 84, 0.4) 100%);
+    transform: rotate(5deg);
+    position: absolute;
+    top: -91.3px;
+    right: -40px;
+    border-radius: 12px;
+    z-index: -1;
+}
+
+.product-list-item {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    width: 70%;
+}
+
+.product-details {
+    width: 71%;
+    height: 568px;
+}
+
+.product-images {
+    height: 240px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.product-images img {
+    margin: 38px 4rem;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.product-details > p:first-of-type {
+    margin-top: 24px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    color: #9D9EA2;
+}
+
+.product-details > p:nth-of-type(2) {
+    height: 54px;
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.product-details > p:nth-of-type(3) {
+    width: 92px;
+    margin: 8px auto;
+    padding: 4.5px 10px 5.5px 10px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #05422C;
+    background: #F2F6F4;
+}
+
+.product-details > button {
+    margin-top: 20px;
+    padding: 9.5px 24px;
+    background: #17AF26;
+    border-radius: 100px;
+    border: none;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.stars img {
+  margin-right: 6px;
+}
+
+.stars p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #060709;;
+}
+
+.row {
+    width: 12px;
+    height: 0.1px;
+    margin: 0 6px;
+    transform: rotate(90deg);
+    background-color: #C8C9CB;
+}
+
+.review {
+  display: flex;
+  flex-direction: row;
+}
+
+.review p:first-child {
+    margin-right: 6px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #060709;;
+}
+
+.review p:last-child {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #C8C9CB;
+}
+
+.price-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.price-details p:first-of-type {
+    margin-right: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: line-through;
+    color: #9D9EA2;
+}
+
+.price-details p:nth-of-type(2) {
+    margin-right: 4px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #EB2606;
+}
+
+.price-details p:last-child {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #C8C9CB;
+}
+
+.quantity-buttons {
+    display: flex;
+    margin-top: 20px;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-buttons > button {
+    padding: 6.5px 10px 7.5px 10px;
+    border: 1px solid #F4F4F4;
+    border-radius: 4px;
+    background-color: #ffffff;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #1A1E26;
+    
+}
