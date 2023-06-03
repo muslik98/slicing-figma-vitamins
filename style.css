@@ -407,7 +407,7 @@ body {
 }
 
 .product-images img {
-    margin: 38px 4rem;
+    padding: 38px 4rem;
 }
 
 .overflow {
@@ -722,4 +722,129 @@ body {
 
 .testimonial-user-rating {
     margin-top: 32px;
+}
+
+.filter-section {
+    margin-top: 160px;
+    padding: 0 120px;
+}
+
+.filter-section > h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    letter-spacing: -4px;
+    color: #1A1E26;
+}
+
+.interest-filter {
+    display: flex;
+    padding: 0 0 32px 0;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    gap: 24px;
+    margin-top: 64px; 
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.interest-filter > p {
+    margin-right: 1rem;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    color: #1A1E26;
+}
+
+.interest-filter > button {
+    height: 48px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 100px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.interest-filter > button:first-of-type {
+    background: #F2F6F4;
+    color: #05422C;
+    border: 1px solid #05422C;
+}
+
+.interest-filter > button:not(:first-of-type) {
+    background: #FFFFFF;
+    border: 1px solid #F4F4F4;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+}
+
+.card-product {
+    text-align: center;
+}
+
+.card-product > p:first-of-type {
+    margin-top: 24px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #9D9EA2;
+}
+
+.card-product > p:nth-of-type(2) {
+    margin-top: 8px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1A1E26;
+}
+
+.card-product > p:nth-of-type(3) {
+    width: 92px;
+    padding: 4.5px 10px 5.5px 10px;
+    margin: 8px auto;
+    background: #F2F6F4;
+    border-radius: 4px;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #05422C;
+}
+
+.card-product > button {
+    margin-top: 20px;
+    padding: 9.5px 24px;
+    background: #17AF26;
+    border-radius: 100px;
+    border: none;
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.bg-product-image {
+    background: #F4F4F4;
+    border-radius: 8px;
+    padding: 38px 3.5rem;
+}
+
+.bg-product-image > img {
+    max-width: 100%;
+}
+
+.price-info {
+    margin-top: 20px;
 }
