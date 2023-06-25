@@ -11,6 +11,7 @@
     --title-color: #1A1E26;
     --text-color: #46494F;
     --font-family: 'Lexend', sans-serif;
+    font-size: 12px;
 }
 
 * {
@@ -726,7 +727,7 @@ body {
 
 .filter-section {
     margin-top: 160px;
-    padding: 0 120px;
+    padding: 0 120px 286px 120px;
 }
 
 .filter-section > h1 {
@@ -847,4 +848,90 @@ body {
 
 .price-info {
     margin-top: 20px;
+}
+
+.referral-section {
+    width: 100%;
+    padding: 296px 140px 112px 172px;
+    background-color: #01100B;
+    position: relative;
+    z-index: 0;
+}
+
+.referral-container {
+    top: 0;
+    left: 50%;
+    width: 80%;
+    display: flex;
+    padding: 8rem 10rem;
+    transform: translate(-50%, -50%);
+    height: 342px;
+    position: absolute;
+    background-color: #05422C;
+    border-radius: 24px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.referral-container > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.referral-content {
+    width: 100%;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.referral-content > button {
+    display: flex;
+    height: 5.33333rem;
+    padding: 0.66667rem 4.66667rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: Lexend;
+    font-weight: 500;
+    border: none;
+    border-radius: 100px;
+    color: #fff;
+    background: var(--secondary-color);
+    
+}
+
+.referral-info {
+    font-family: Lexend;
+}
+
+.referral-info > h1 {
+    height: auto;
+    font-size: 5.3rem;
+    font-weight: 600;
+    letter-spacing: -0.25rem;
+    color: #fff;
+}
+
+.referral-text {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2.67rem;
+}
+
+.referral-text > p:first-child {
+    font-size: 2.66667rem;
+    letter-spacing: -0.04167rem;
+    color: #fff;
+}
+
+.referral-text > p:last-child {
+    font-size: 2.66667rem;
+    font-weight: 600;
+    letter-spacing: -0.125rem;
+    color: var(--third-color);
 }
