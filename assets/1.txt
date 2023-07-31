@@ -1,0 +1,7 @@
+The operation failed to complete because the Disk
+Management console view is not up-to-date. Refresh the
+view by using the refresh task. Ifthe problem persists close
+the Disk Management console, then restart Disk Management
+of restart the computer.
+
+[oe]

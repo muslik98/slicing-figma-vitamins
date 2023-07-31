@@ -67,14 +67,14 @@ body {
     margin-right: 8px;
     border: 1px solid #F4F4F4;
     border-radius: 2rem;
-    font-family: var(--font-family);
+    /* font-family: var(--font-family); */
     font-size: 1rem;
     font-weight: 400;
     outline: none;
 }
 
 .search-bar input::placeholder {
-    font-family: var(--font-family);
+    /* font-family: var(--font-family); */
     font-size: 1rem;
     font-weight: 400;
     color: #C8C9CB;
@@ -98,7 +98,7 @@ body {
 }
 
 .account-text p {
-    font-family: var(--font-family);
+    /* font-family: var(--font-family); */
     font-size: 1rem;
     font-weight: 300;
     padding: 0 1rem;
@@ -151,7 +151,7 @@ body {
 }
 
 .carousel-text > p:first-child {
-    font-size: 1rem;
+    font-size: 1.33rem;
     font-weight: 300;
     letter-spacing: 0.25rem;
     line-height: 110%;
@@ -160,7 +160,7 @@ body {
 
 .carousel-text p:nth-child(3) {
     margin-top: 24px;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 300;
     color: var(--neutral-color);
 }
@@ -169,10 +169,10 @@ body {
     width: 100%;
     margin-top: 30px;
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 5.33rem;
     font-style: normal;
     line-height: 110%;
-    letter-spacing: -4px;
+    letter-spacing: -0.33333rem;
     color: #ffffff;
 }
 
@@ -297,7 +297,7 @@ body {
     margin-top: 64px;
     justify-content: center;
     gap: 2rem;
-    padding: 0 7.5rem;
+    padding: 0 10rem;
 }
 
 .button-group button {
@@ -305,7 +305,7 @@ body {
     min-width: 100px;
     padding: 12px 20px;
     border-radius: 100px;
-    font-family: 'Lexend';
+    /* font-family: var(--font-family); */
 }
 
 .button-group button:nth-child(1) {
@@ -327,7 +327,7 @@ body {
     width: 100%;
     margin-top: 64px;
     gap: 32px;
-    padding: 0 0 0 7.5rem;   
+    padding: 0 0 0 10rem;   
 }
 
 .product-item {
@@ -417,7 +417,7 @@ body {
 
 .product-details > p:first-of-type {
     margin-top: 24px;
-    font-family: 'Lexend';
+    /* font-family: var(--font-family); */
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -438,7 +438,7 @@ body {
     width: 92px;
     margin: 8px auto;
     padding: 4.5px 10px 5.5px 10px;
-    font-family: 'Lexend';
+    /* font-family: var(--font-family); */
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -453,7 +453,7 @@ body {
     background: #17AF26;
     border-radius: 100px;
     border: none;
-    font-family: 'Lexend';
+    /* font-family: var(--font-family); */
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -566,7 +566,7 @@ body {
     border: 1px solid #F4F4F4;
     border-radius: 4px;
     background-color: #ffffff;
-    font-family: 'Lexend';
+    /* font-family: var(--font-family); */
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -586,11 +586,11 @@ body {
 
 .testimonial-section {
     margin-top: 136px;
-    padding: 0 0 0 7.5rem;
+    padding: 0 0 0 10rem;
 }
 
 .testimonial-section > h1 {
-    font-family: 'Lexend';
+    /* font-family: var(--font-family); */
     font-style: normal;
     font-weight: 600;
     font-size: 64px;
@@ -727,7 +727,7 @@ body {
 
 .filter-section {
     margin-top: 160px;
-    padding: 0 120px 286px 120px;
+    padding: 0 10rem 286px 10rem;
 }
 
 .filter-section > h1 {
@@ -740,18 +740,19 @@ body {
 
 .interest-filter {
     display: flex;
-    padding: 0 0 32px 0;
     width: 100%;
     height: 80px;
+    padding-bottom: 2.67rem;
     align-items: center;
     gap: 24px;
-    margin-top: 64px; 
+    margin-top: 5.83rem; 
+    margin-bottom: 5.33rem;
     border-bottom: 1px solid #f4f4f4;
 }
 
 .interest-filter > p {
     margin-right: 1rem;
-    font-family: 'Lexend';
+    /* font-family: var(--font-family); */
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -759,15 +760,26 @@ body {
     color: #1A1E26;
 }
 
-.interest-filter > button {
+.interest-filter > button:first-of-type {
     height: 48px;
     padding: 8px 20px;
     border: none;
     border-radius: 100px;
-    font-family: 'Lexend';
+    /* font-family: var(--font-family); */
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 1.33333rem;
+}
+
+.interest-filter > :not(button:first-of-type) {
+    height: 48px;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 100px;
+    /* font-family: var(--font-family); */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.33333rem;
 }
 
 .interest-filter > button:first-of-type {
@@ -785,7 +797,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
-    gap: 2rem;
+    gap: 2.67rem;
 }
 
 .card-product {
@@ -794,7 +806,7 @@ body {
 
 .card-product > p:first-of-type {
     margin-top: 24px;
-    font-family: 'Lexend';
+    /* font-family: var(--font-family); */
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
@@ -803,7 +815,7 @@ body {
 
 .card-product > p:nth-of-type(2) {
     margin-top: 8px;
-    font-family: 'Lexend';
+    /* font-family: var(--font-family); */
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -816,7 +828,7 @@ body {
     margin: 8px auto;
     background: #F2F6F4;
     border-radius: 4px;
-    font-family: 'Lexend';
+    /* font-family: var(--font-family); */
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -829,7 +841,7 @@ body {
     background: #17AF26;
     border-radius: 100px;
     border: none;
-    font-family: 'Lexend';
+    /* font-family: var(--font-family); */
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -879,7 +891,10 @@ body {
     height: 5.33333rem;
     margin-top: 6.67rem;
     padding: 0.66667rem 4.66667rem;
+    font-family: Lexend;
+    font-size: 1.33rem;
     font-weight: 500;
+    font-style: normal;
     background-color: var(--secondary-color);
     color: #fff;
     border: none;
@@ -1000,4 +1015,96 @@ body {
     top: 0;
     left: 0;
     position: absolute;
+}
+
+.pLR-10 {
+    padding: 0 10rem;
+}
+
+.intro-section {
+    margin-top: 10rem;
+}
+
+.intro-section > h1 {
+    width: 65.75rem;
+    margin-bottom: 2rem;
+    font-family: Lexend;
+    font-size: 5.33333rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.33333rem;
+    line-height: 110%;
+    color: #1A1E26;
+}
+
+.intro-section > p {
+    width: 65.75rem;
+    margin-bottom: 5.33rem;
+    font-family: Lexend;
+    font-size: 1.33333rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--text-color);
+}
+
+.feature-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2.67rem;
+    row-gap: 3.33rem;
+}
+
+.feature-section > .container {
+    padding: 2.66667rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(206, 207, 213, 0.40);
+    background: #FFF;
+}
+
+.feature-section > .container > h3 {
+    margin-top: 2.667rem;
+    font-family: Lexend;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 3rem */
+    letter-spacing: -0.04167rem;
+    color: #1A1E26;
+}
+
+.feature-section > .container > p {
+    margin-top: 1.33rem;
+    font-family: Lexend;
+    font-size: 1.16667rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 1.75rem */
+    color: #717378;
+}
+
+.product-grid-1-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 2.67rem;
+}
+
+.cannabis-type {
+    display: flex;
+    padding: 0 10rem;
+    border: 1px solid red;
+    gap: 2.67rem;
+}
+
+.cannabis-type__item {
+    border: 1px solid green;
+    padding: 2.67rem;
+    flex: 1;
+    flex-basis: 0;
+}
+
+.cannabis-type__image {
+    text-align: center;
 }
