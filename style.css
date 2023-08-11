@@ -727,7 +727,7 @@ body {
 
 .filter-section {
     margin-top: 160px;
-    padding: 0 10rem 286px 10rem;
+    padding: 0 10rem 20rem 10rem;
 }
 
 .filter-section > h1 {
@@ -958,6 +958,7 @@ body {
     font-weight: 600;
     letter-spacing: -0.25rem;
     color: #fff;
+    text-align: start;
 }
 
 .referral-text {
@@ -1093,18 +1094,240 @@ body {
 
 .cannabis-type {
     display: flex;
-    padding: 0 10rem;
-    border: 1px solid red;
+    margin: 0 10rem;
+    padding: 5.33rem 0 0 0;
     gap: 2.67rem;
+    border-top: 1px solid#717378;
 }
 
 .cannabis-type__item {
-    border: 1px solid green;
+    width: 30%;
+    border: 1px solid#F4F4F4;
+    border-radius: 1rem;
     padding: 2.67rem;
     flex: 1;
     flex-basis: 0;
 }
 
 .cannabis-type__image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F2F6F4;
+    padding: 5.83rem 9.38rem;
+}
+
+.cannabis-type__image img {
+    object-fit: cover;
+    width: 100%;
+    max-width: 7.5rem;
+}
+
+.cannabis-type__content h3 {
+    color: #1A1E26;
+    margin-top: 2.67rem;
+    font-family: var(--font-family);
+    font-size: 2.66667rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.125rem;
+}
+
+.cannabis-type__content p {
+    margin-top: 1.33rem;
+    color:#717378;
+    font-family: var(--font-family);
+    font-size: 1.16667rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.cannabis-type__content button {
+    margin-top: 2.67rem;
+    border: none;
+    background-color: white;
+    color:#17AF26;
+    font-family: var(--font-family);
+    font-size: 1.33333rem;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration-line: underline;
+}
+
+.weed-education {
+    background-color: #F4F4F4;
+    padding: 10rem 10rem 0 10rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2.67rem;
+    border-bottom: 1px solid#C8C9CB;
+}
+
+.section-header h3 {
+    color: #1A1E26;
+    font-family: var(--font-family);
+    font-size: 2.66667rem;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: -0.125rem;
+}
+
+.section-header button {
+    color:#17AF26;
+    font-family: var(--font-family);
+    font-size: 1.33333rem;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration-line: underline;
+    border: none;
+    background-color: #F4F4F4;
+}
+
+.article-list {
+    width: 100%;
+    display: flex;
+    gap: 2.67rem;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5.33rem 0 26.67rem 0;
+}
+
+.article {
+    flex: 1;
+}
+
+.article p:nth-of-type(1) {
+    margin-bottom: 0.67rem;
+    color: var(--neutral-300, #717378);
+    font-family: var(--font-family);
+    font-size: 1.16667rem;
+    font-style: normal;
+    font-weight: 300;
+}
+
+.article p:nth-of-type(2) {
+    color:#717378;
+    font-family: var(--font-family);
+    font-size: 1.33333rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 2rem */
+    margin-bottom: 2.67rem;
+}
+
+.article > h4 {
+    margin-bottom: 0.67rem;
+    font-family: var(--font-family);
+    color: var(--neutral-500, #1A1E26);
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.04167rem;
+    line-height: 150%; /* 3rem */
+}
+
+.article button {
+    color:#17AF26;
+    font-family: var(--font-family);
+    font-size: 1.33333rem;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration-line: underline;
+    border: none;
+    background-color: #F4F4F4;
+}
+
+.article-image {
     text-align: center;
+    margin-bottom: 2rem;
+}
+
+.article-image img {
+    width: 100%;
+}
+
+.promo-section {
+    width: 100%;
+    position: relative;
+    background: linear-gradient(180deg, #1A1E26 0%, #01100B 100%);
+    padding: 31.67rem 10rem 5.33rem 10rem;
+}
+
+.promo {
+    width: calc(100% - 20rem);
+    margin: 0 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(0, -50%);
+    padding: 5.33rem;
+    border-radius: 2rem;
+    background:#05422C;
+}
+
+.promo h2 {
+    width: 65.75rem;
+    margin-bottom: 2rem;
+    color: #FFF;
+    font-size: 5.33333rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 5.86667rem */
+    letter-spacing: -0.33333rem;
+    max-width: 100%; /*max width height untuk auto resize h2  Maksimum lebar elemen <h2> tidak melebihi elemen induk */
+    max-height: 100%;/* Maksimum tinggi elemen <h2> tidak melebihi elemen induk */
+}
+
+.promo > p {
+    margin-bottom: 2.67rem;
+    color:#C3D2CC;
+    font-size: 1.66667rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.promo hr {
+    border-top: 1px solid #346654;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    margin-bottom: 2.67rem;
+}
+
+.email-input {
+    display: flex;
+    gap: 2.67rem;
+}
+
+.email-input input {
+    width: 100%;
+    border-radius: 8.33333rem;
+    border: 1px solid #346654;
+    background: #05422C;
+    padding: 2rem 3.67rem;
+}
+
+.email-input input::placeholder {
+    color: var(--secondary-300, #648A7C);
+    font-size: 1.33333rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 2rem */
+}
+
+.email-input button {
+    width: 30%;
+    color:#FFF;
+    font-size: 1.33333rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 2rem */
+    border: none;
+    border-radius: 8.33333rem;
+    background:#17AF26;
+    padding: 2rem 3.67rem;
 }
