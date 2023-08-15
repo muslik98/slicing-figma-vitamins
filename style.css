@@ -1427,7 +1427,7 @@ body {
 
 /* Styling Category Section */
 
-.feature-section {
+.cat-feature-section {
     display: flex;
     justify-content: space-between;
     gap: 2.67rem;
@@ -1435,14 +1435,14 @@ body {
     background-color: #F2F6F4;
 }
 
-.feature-block {
+.cat-feature-block {
     display: flex;
     gap: 1.33rem;
     align-items: center;
     padding: 2rem 0;
 }
 
-.feature-block img {
+.cat-feature-block img {
     width: 4rem;
     height: 4rem;
     border-radius: 8.33333rem;
