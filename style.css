@@ -1424,3 +1424,32 @@ body {
     font-weight: 400;
     list-style-type: none;
 }
+
+/* Styling Category Section */
+
+.feature-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.67rem;
+    padding: 0 5.33rem;
+    background-color: #F2F6F4;
+}
+
+.feature-block {
+    display: flex;
+    gap: 1.33rem;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.feature-block img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 8.33333rem;
+    background:#FFF;
+    padding: 0.92rem;
+}
+
+.bg-white {
+    background-color: #fff;
+}
